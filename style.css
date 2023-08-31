@@ -1,3 +1,67 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('uo.png');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -110,7 +174,7 @@ textarea {
     @media only screen and (max-width: 37.5em) {
       .heading-sec__main::after {
         top: calc(100% + 1.2rem); } }
-
+        
 .heading-sec__sub {
   display: block;
   text-align: center;
@@ -403,11 +467,10 @@ textarea {
         width: 100%; } }
 
 .project-cs-hero {
-  color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
-  position: relative; }
+  height:100vh;
+    background: url('uo.jpeg');
+    background-size:cover;
+    position:relative; }
   @media only screen and (max-width: 37.5em) {
     .project-cs-hero {
       height: unset;
@@ -497,7 +560,7 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
+  background: black;
   background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
@@ -516,13 +579,7 @@ textarea {
     transition: color .3s; }
     .header__logo-container:hover {
       color: #0062b9; }
-  .header__logo-img-cont {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50px;
-    overflow: hidden;
-    margin-right: 1.5rem;
-    background: #0062b9; }
+  
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
