@@ -27,6 +27,14 @@ const testimonialsModalFunc = function () {
   overlay.classList.toggle("active");
 };
 
+document.querySelectorAll('.navbar-item a').forEach((link) => {
+  link.addEventListener('click', function() {
+    document.querySelector('.navbar-item .active').classList.remove('active');
+    this.classList.add('active');
+  });
+});
+
+
 // Add click event to all testimonials items
 for (let i = 0; i < testimonialsItem.length; i++) {
   testimonialsItem[i].addEventListener("click", function () {
